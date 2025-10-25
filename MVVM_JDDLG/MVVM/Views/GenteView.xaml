@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_JDDLG.MVVM.Views.GenteView"
+             Title="GenteView">
+
+    <CollectionView SelectionMode="Multiple"
+                        ItemsSource="{Binding Gente}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame Margin="20"
+                           BorderColor="Red"
+                           CornerRadius="5"
+                           HasShadow="True"
+                           HeightRequest="100"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center">
+                        <Label Text="{Binding .}"/>
+
+
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>
+
+
+
+
+</ContentPage>
